@@ -81,10 +81,7 @@ class TextEditor(BaseEditor):
     def copy(self, *_):
         if self.editable:
             self.text.copy()
-
-    def goto(self, line):
-        self.text.goto(line)
-            
+        
     def paste(self, *_):
         if self.editable:
             self.text.paste()
@@ -248,4 +245,3 @@ class TextEditor(BaseEditor):
 
     def yview_scroll(self, n, what):
         self.text.yview_scroll(n, what)
-
